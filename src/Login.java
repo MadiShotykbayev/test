@@ -57,5 +57,10 @@ public class Login {
         sc.close();
         return true;
     }
-
+MessageDigest md = MessageDigest.getInstance("MD5");
+    byte[] hashInBytes = md.digest(password.getBytes(StandardCharsets.UTF_8));
+    StringBuilder sb = new StringBuilder();
+            for (byte b : hashInBytes) {
+        sb.append(String.format("%02x", b));
+    }
 }
