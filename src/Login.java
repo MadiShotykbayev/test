@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.logging.Logger;
 import java.util.logging.*;
+import java.security.MessageDigest;
 
 public class Login {
 
